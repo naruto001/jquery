@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>2_1</title>
+		<script src="js/jquery-1.12.4.min.js"></script>
+	</head>
+	<body>
+		<ul>
+			<li title="hello"></li>
+			<li title="hello"></li>
+			<li></li>
+			<li></li>
+			<li class="change"></li>
+			<li class="change"></li>
+		</ul>
+		<script>
+			//让class="change"的li背景变成red
+				// $(".change").css("background","red");
+				// $("li.change").css("background","red");
+				// $("li").filter(".change").css("background","red");
+
+			//奇数偶数行变色(注意是li:even要加冒号)
+				// $("li:even").css("background","red");
+				// $("li:odd").css("background","red");
+
+			//通过eq()来变色，eq相当于下标
+				// $("li:eq(3)").css("background","red");
+
+			//通过属性筛选
+				$("li").filter("[title=hello]").css("background","red");
+		</script>
+	</body>
+</html>

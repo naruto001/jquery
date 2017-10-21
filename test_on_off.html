@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>nav</title>
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<style>
+			.wrap {
+				width:100px;
+				height:100px;
+				border:1px solid #ccc;
+			}
+		</style>
+		<script>
+			$( function () {
+				$(".wrap").on("click mouseover", function () {
+					alert(123);
+					$(this).off("mouseover");
+				} )
+			} )
+		</script>
+
+	</head>
+	<body>
+		<div class="wrap">
+			123
+		</div>
+	</body>
+</html>

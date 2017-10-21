@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>nav</title>
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<style>
+			input {
+				padding:5px;
+			}
+			.wrap div {
+				width:200px;
+				height:200px;
+				border:1px solid #ccc;
+				display:none;
+			}
+			.active {
+				background:red;
+				color:yellow;
+			}
+		</style>
+		<script>
+			$( function () {
+				$(".wrap").find("input").click( function () {
+					$(".wrap").find("input").attr("class","");
+					$(".wrap").find("div").css("display","none");
+					$(this).attr("class","active");
+					$(".wrap").find("div").eq( $(this).index() ).css("display","block");
+				} )
+
+			} )
+		</script>
+
+	</head>
+	<body>
+		<div class="wrap">
+			<input class="active" type="button" value="1"/>
+			<input type="button" value="2"/>
+			<input type="button" value="3"/>
+			<div style="display:block;">111111</div>
+			<div>222222</div>
+			<div>333333</div>
+		</div>
+	</body>
+</html>

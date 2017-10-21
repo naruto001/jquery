@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>6_1</title>
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script>
+			$( function () {
+         		// $("div").filter(".box").css("background","red");
+         		$("div").has(".box").css("background","pink");
+			} )
+		</script>
+	</head>
+	<body>
+		<div class="box">123</div>
+		<div>
+			<span class="box">456</span>
+		</div>
+	</body>
+</html>

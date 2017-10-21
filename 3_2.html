@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>3_2</title>
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script>
+			$( function () {
+				var oBox = $("#box");
+				oBox.css("background","red");
+				oBox.click( function () {
+					alert( $(this).html() )
+				} );
+			} )
+		</script>
+	</head>
+	<body>
+		<div id="box">123</div>
+	</body>
+</html>
